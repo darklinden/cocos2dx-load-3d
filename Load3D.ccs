@@ -1,0 +1,16 @@
+<Solution>
+  <PropertyGroup Name="Load3D" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="img">
+          <Image Name="black.png" />
+          <Image Name="gray.png" />
+          <Image Name="white.png" />
+        </Folder>
+        <Project Name="control.csd" Type="Node" />
+        <Project Name="line.csd" Type="Node" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
