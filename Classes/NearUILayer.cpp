@@ -779,8 +779,8 @@ void NearUILayer::updateModel()
         auto animation = Animation3D::create(_path);
         if (animation) {
             _frame_count->setString(StringUtils::toString(round(animation->getDuration() * 30.0)));
-            _start_frame->setString(StringUtils::toString(0));
-            _end_frame->setString(StringUtils::toString(round(animation->getDuration() * 30.0)));
+//            _start_frame->setString(StringUtils::toString(0));
+//            _end_frame->setString(StringUtils::toString(round(animation->getDuration() * 30.0)));
         }
         
         CCLOG("%f %f %f", _modleSprite->getPosition3D().x, _modleSprite->getPosition3D().y,
@@ -1014,6 +1014,8 @@ void NearUILayer::tableCellTouched(TableView* table, TableViewCell* cell)
 #else
     _path = FileUtils::getInstance()->fullPathForFilename("model/" + _pathList[_selectedIdx]);
 #endif
+    
+    this->updateModel();
 
 }
 
